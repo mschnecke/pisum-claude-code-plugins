@@ -1,6 +1,6 @@
 ---
 name: update-bump
-description: Review uncommitted changes, bump the affected plugin's version in plugin.json and marketplace.json, and update README.md and CLAUDE.md to match. Use when the user wants to bump the version, prepare a release, or sync version numbers and docs after changing a plugin — triggers on "bump version", "update version", "version bump", "prep release". Does not commit.
+description: Review uncommitted changes, bump the affected plugin's version in plugin.json and marketplace.json, and update README.md (plugin table and version history) and CLAUDE.md to match. Use when the user wants to bump the version, prepare a release, or sync version numbers and docs after changing a plugin — triggers on "bump version", "update version", "version bump", "prep release". Does not commit.
 ---
 
 # Update & Bump Version
@@ -38,6 +38,18 @@ If a plugin's description changed, keep `description` identical in `plugin.json`
 ## 4. Update README.md
 
 In the **Plugins** table, update the version and description of each changed plugin, and add a row for each new plugin. Remove "Work in progress" notes once a plugin has components. Keep install lines in sync with the plugin names.
+
+In the **Version history** section (create it after **Plugins** if missing), add an entry at the top for the new marketplace version, newest first. Use today's date and one bullet per changed plugin with its new version and what changed for users:
+
+```markdown
+## Version history
+
+### 1.1.0 — 2026-11-18
+
+- `planning` 2.2.0: Added the `code-review`, `git:clean_gone` and `git:commit-push-mr` commands.
+```
+
+Leave older entries unchanged.
 
 ## 5. Update CLAUDE.md
 

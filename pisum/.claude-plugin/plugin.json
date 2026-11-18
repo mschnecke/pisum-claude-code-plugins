@@ -1,7 +1,7 @@
 {
-  "name": "planning",
-  "version": "2.1.0",
-  "description": "Planning workflows for Claude Code.",
+  "name": "pisum",
+  "version": "3.0.0",
+  "description": "Pisum plugin for Claude Code.",
   "author": {
     "name": "pisum"
   },

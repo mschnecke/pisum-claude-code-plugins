@@ -7,10 +7,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 A Claude Code plugin marketplace named `pisum`, hosted on GitHub at `mschnecke/pisum-claude-code-plugins` (the git remote uses the SSH alias `github.pisum`; treat it as github.com). There is no build, lint or test toolchain — the repo is manifests plus Markdown plugin components.
 
 - `.claude-plugin/marketplace.json` — the catalog: marketplace name, owner, and the list of plugins.
-- `<plugin>/` — each plugin is a top-level directory next to `.claude-plugin/`, referenced from the catalog by a relative `source` (e.g. `"./planning"`).
+- `<plugin>/` — each plugin is a top-level directory next to `.claude-plugin/`, referenced from the catalog by a relative `source` (e.g. `"./pisum"`).
 - `<plugin>/.claude-plugin/plugin.json` — the plugin's own manifest.
 
-Currently there is one plugin, `planning`, which provides OpenSpec planning commands under `commands/opsx/` (invoked as `/planning:opsx:<name>`).
+Currently there is one plugin, `pisum`, which provides OpenSpec planning commands under `commands/opsx/` (invoked as `/pisum:opsx:<name>`), git workflow commands under `commands/git/`, and a `code-review` command.
 
 ## Plugin layout
 
@@ -26,7 +26,7 @@ Components are auto-discovered only from these conventional paths inside a plugi
   .mcp.json
 ```
 
-Installed components are namespaced by plugin, e.g. a skill `foo` in `planning` is invoked as `planning:foo`.
+Installed components are namespaced by plugin, e.g. a skill `foo` in `pisum` is invoked as `pisum:foo`.
 
 ## Versioning
 
@@ -38,13 +38,13 @@ The project skill `/update-bump` ([.claude/skills/update-bump/SKILL.md](.claude/
 
 ```sh
 claude plugin validate .            # marketplace manifest
-claude plugin validate ./planning   # one plugin (manifest + skills/agents/commands)
-claude plugin validate ./planning --strict   # warnings fail too
+claude plugin validate ./pisum   # one plugin (manifest + skills/agents/commands)
+claude plugin validate ./pisum --strict   # warnings fail too
 ```
 
 `--profile directory` additionally fails on public plugin-directory submission rules (README of 40+ words, plugin icon); these are advisory unless publishing to the directory.
 
-Try a plugin without installing it: `claude --plugin-dir ./planning`. Try the whole marketplace: `/plugin marketplace add <path-to-this-repo>`, then `/plugin install planning@pisum`.
+Try a plugin without installing it: `claude --plugin-dir ./pisum`. Try the whole marketplace: `/plugin marketplace add <path-to-this-repo>`, then `/plugin install pisum@pisum`.
 
 ## Conventions
 
