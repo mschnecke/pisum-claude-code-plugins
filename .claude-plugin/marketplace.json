@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "pisum",
+  "version": "0.1.0",
+  "description": "A Claude Code plugin marketplace by pisum.",
+  "owner": {
+    "name": "pisum"
+  },
+  "plugins": [
+    {
+      "name": "planning",
+      "source": "./planning",
+      "description": "Planning workflows for Claude Code.",
+      "category": "development",
+      "keywords": ["planning"],
+      "version": "0.1.0"
+    }
+  ]
+}
