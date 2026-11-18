@@ -10,7 +10,7 @@ A Claude Code plugin marketplace named `pisum`, hosted on GitHub at `mschnecke/p
 - `<plugin>/` — each plugin is a top-level directory next to `.claude-plugin/`, referenced from the catalog by a relative `source` (e.g. `"./planning"`).
 - `<plugin>/.claude-plugin/plugin.json` — the plugin's own manifest.
 
-Currently there is one plugin, `planning`, which provides OpenSpec planning commands under `commands/opsx/` (invoked as `/planning:opsx:<name>`).
+Currently there is one plugin, `planning`, which provides OpenSpec planning commands under `commands/opsx/` (invoked as `/planning:opsx:<name>`), git workflow commands under `commands/git/`, and a `code-review` command.
 
 ## Plugin layout
 

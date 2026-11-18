@@ -15,7 +15,13 @@ Add the marketplace, then install a plugin from it:
 
 | Plugin | Version | Description |
 | --- | --- | --- |
-| `planning` | 2.1.0 | Planning workflows for Claude Code. |
+| `planning` | 2.2.0 | Planning workflows for Claude Code. |
+
+## Version history
+
+### 1.1.0 — 2026-11-18
+
+- `planning` 2.2.0: Added the `code-review`, `git:clean_gone` and `git:commit-push-mr` commands.
 
 ## Development
 
