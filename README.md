@@ -15,7 +15,7 @@ Add the marketplace, then install a plugin from it:
 
 | Plugin | Version | Description |
 | --- | --- | --- |
-| `planning` | 0.1.0 | Planning workflows for Claude Code. Work in progress — no skills yet. |
+| `planning` | 2.1.0 | Planning workflows for Claude Code. |
 
 ## Development
 
