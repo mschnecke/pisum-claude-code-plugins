@@ -1,0 +1,12 @@
+{
+  "name": "planning",
+  "version": "0.1.0",
+  "description": "Planning workflows for Claude Code.",
+  "author": {
+    "name": "pisum"
+  },
+  "homepage": "https://github.com/mschnecke/pisum-claude-code-plugins",
+  "repository": "https://github.com/mschnecke/pisum-claude-code-plugins.git",
+  "license": "MIT",
+  "keywords": ["planning"]
+}
