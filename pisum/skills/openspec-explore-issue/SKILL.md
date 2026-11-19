@@ -1,12 +1,12 @@
 ---
-description: Read a GitLab issue with glab by number and hand it to OpenSpec's /opsx:explore workflow
+name: openspec-explore-issue
+description: Read a GitLab issue with glab by number and hand it to OpenSpec workflow. Use when the user wants to explore a GitLab issue before proposing work, says "explore issue", "investigate issue", or gives a GitLab issue number to explore. Reads the issue, comments and links with glab, starts a feature branch, and delegates exploration to OpenSpec's native openspec-explore skill.
 argument-hint: '<issue-number>'
-disable-model-invocation: false
 ---
 
 # Explore a GitLab issue with OpenSpec
 
-Read GitLab issue `$ARGUMENTS` with `glab`, then delegate exploration to OpenSpec's native `openspec-explore` skill. This command is the **GitLab adapter**: it gathers the issue content, but it does **not** author the exploration itself — that is owned by the `openspec-explore` skill.
+Read GitLab issue `$ARGUMENTS` with `glab`, then delegate exploration to OpenSpec's native `openspec-explore` skill. This skill is the **GitLab adapter**: it gathers the issue content, but it does **not** author the exploration itself — that is owned by the `openspec-explore` skill.
 
 If no issue number was provided, ask which GitLab issue to explore before continuing.
 

@@ -1,6 +1,6 @@
 {
   "name": "pisum",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Pisum plugin for Claude Code.",
   "author": {
     "name": "pisum"
