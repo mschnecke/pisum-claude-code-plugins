@@ -15,9 +15,13 @@ Add the marketplace, then install a plugin from it:
 
 | Plugin  | Version | Description                   |
 | ------- | ------- | ----------------------------- |
-| `pisum` | 3.0.0   | Pisum plugin for Claude Code. |
+| `pisum` | 4.0.0   | Pisum plugin for Claude Code. |
 
 ## Version history
+
+### 3.0.0 — 2026-11-19
+
+- `pisum` 4.0.0: The `opsx:explore-issue` command is now the `openspec-explore-issue` skill, invoked as `/pisum:openspec-explore-issue`. Removed the `code-review`, `git:clean_gone`, `git:commit-push-mr` and `opsx:explain-german` commands.
 
 ### 2.0.0 — 2026-11-18
 
